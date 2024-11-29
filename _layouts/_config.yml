@@ -1,0 +1,41 @@
+# Site Settings
+title: "Pine Marten Botanicals"           # Your site title
+description: "Handcrafted botanical products for a healthier you."  # A brief site description
+url: "https://pinemartenbotanicals.com"   # Your site's URL (without trailing slash)
+baseurl: ""                               # Keep empty since it's the root
+
+# Author Information
+author:
+  name: "Pine Marten Botanicals"
+  email: "owner@pinemartenbotanicals.com"
+
+# Theme Settings (You can choose an open-source Jekyll theme)
+theme: minima  # Replace with your theme or custom layout
+
+# Markdown Configuration
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub-Flavored Markdown for better compatibility
+
+# Plugins
+plugins:
+  - jekyll-seo-tag       # SEO optimization
+  - jekyll-sitemap        # Generate sitemap.xml for search engines
+  - jekyll-feed           # RSS feed generation
+  - jekyll-paginate       # Pagination support
+  - jekyll-assets         # Asset management (if needed)
+
+# Pagination Configuration (for blogs or product pages)
+paginate: 5              # Number of posts/products per page
+paginate_path: "/page:num/"
+
+# Exclude Certain Files/Folders from Build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+# Build Settings
+future: true              # Show future-dated posts
+relative_permalinks: false
