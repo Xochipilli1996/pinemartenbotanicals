@@ -4,20 +4,10 @@ description: "Handcrafted botanical products for a healthier you."  # A brief si
 url: "https://pinemartenbotanicals.com"   # Your site's URL (without trailing slash)
 baseurl: ""                               # Keep empty since it's the root
 
-# Contact Info (Optional)
-email: "your-email@example.com"           # Replace with your business email
-phone: "123-456-7890"                     # Business phone (if applicable)
-
-# Social Media Links (Optional)
-social:
-  twitter: "https://twitter.com/yourhandle"
-  instagram: "https://instagram.com/yourhandle"
-  facebook: "https://facebook.com/yourpage"
-
 # Author Information
 author:
-  name: "Your Name or Pine Marten Botanicals"
-  email: "your-email@example.com"
+  name: "Pine Marten Botanicals"
+  email: "owner@pinemartenbotanicals.com"
 
 # Theme Settings (You can choose an open-source Jekyll theme)
 theme: minima  # Replace with your theme or custom layout
