@@ -1,49 +1,51 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site Settings
+title: "Pine Marten Botanicals"           # Your site title
+description: "Handcrafted botanical products for a healthier you."  # A brief site description
+url: "https://pinemartenbotanicals.com"   # Your site's URL (without trailing slash)
+baseurl: ""                               # Keep empty since it's the root
 
-title: "Pine Marten Botanicals"
-description: "Your source for natural botanicals"
-baseurl: "" # Leave blank for root domain
-url: "https://pinemartenbotanicals.com" # Your live site URL
+# Contact Info (Optional)
+email: "your-email@example.com"           # Replace with your business email
+phone: "123-456-7890"                     # Business phone (if applicable)
 
-# Build settings
-theme: minima
+# Social Media Links (Optional)
+social:
+  twitter: "https://twitter.com/yourhandle"
+  instagram: "https://instagram.com/yourhandle"
+  facebook: "https://facebook.com/yourpage"
+
+# Author Information
+author:
+  name: "Your Name or Pine Marten Botanicals"
+  email: "your-email@example.com"
+
+# Theme Settings (You can choose an open-source Jekyll theme)
+theme: minima  # Replace with your theme or custom layout
+
+# Markdown Configuration
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub-Flavored Markdown for better compatibility
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag       # SEO optimization
+  - jekyll-sitemap        # Generate sitemap.xml for search engines
+  - jekyll-feed           # RSS feed generation
+  - jekyll-paginate       # Pagination support
+  - jekyll-assets         # Asset management (if needed)
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Pagination Configuration (for blogs or product pages)
+paginate: 5              # Number of posts/products per page
+paginate_path: "/page:num/"
+
+# Exclude Certain Files/Folders from Build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+# Build Settings
+future: true              # Show future-dated posts
+relative_permalinks: false
