@@ -1,6 +1,6 @@
 ---
 layout: default  # Layout to use (from _layouts)
-title: "Welcome to Pine Marten Botanicals"  # Page title
+title: "Pine Marten Botanicals"  # Page title
 ---
 
 # Welcome to Pine Marten Botanicals
